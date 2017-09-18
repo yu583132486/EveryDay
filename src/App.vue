@@ -14,7 +14,7 @@
     goSever:goSever
     }">
     </menuLeft>
-    <sever 
+    <sever
     v-if='showSever'
     :saveDates="saveDates"
     :go='NPArticle'
@@ -79,8 +79,12 @@ export default {
     // 获取数据
     this.$Ajax({
       method: 'get',
-      baseURL: '/api',
-      url: 'article/today'
+      // baseURL: '/api',
+      // url: 'article/today'
+      url: 'https://interface.meiriyiwen.com/article/today',
+      params: {
+        dev: 1
+      }
     }).then(reg => { this.apiData = reg.data.data }).catch(err => { console.log(err) })
   },
   data () {
@@ -149,8 +153,9 @@ export default {
       this.showSever = false
       this.$Ajax({
         method: 'get',
-        baseURL: '/api',
-        url: 'article/day',
+        // baseURL: '/api',
+        // url: 'article/day',
+        url: 'https://interface.meiriyiwen.com/article/day',
         params: {
           dev: 1,
           date: data
@@ -171,8 +176,9 @@ export default {
       this.clickRight = false
       this.$Ajax({
         method: 'get',
-        baseURL: '/api',
-        url: 'article/random',
+        // baseURL: '/api',
+        // url: 'article/random',
+        url: 'https://interface.meiriyiwen.com/article/random',
         params: {
           dev: 1
         }
@@ -192,8 +198,9 @@ export default {
       this.clickRight = false
       this.$Ajax({
         method: 'get',
-        baseURL: '/api',
-        url: 'article/today',
+        // baseURL: '/api',
+        // url: 'article/today',
+        url: 'https://interface.meiriyiwen.com/article/today',
         params: {
           dev: 1
         }

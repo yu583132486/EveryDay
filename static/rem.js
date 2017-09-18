@@ -16,6 +16,6 @@ function adapt(designWidth, rem2px){
 var defaultFontSize = adapt(640, 100);
 
 export default {
-    defaultFontSize,
-    adapt
+    defaultFontSize: defaultFontSize,
+    adapt: adapt
 }

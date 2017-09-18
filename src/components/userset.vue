@@ -77,7 +77,7 @@
     border-radius: 50%;
     width: .5rem;
     height: .5rem;
-    line-height: .5rem;
+    line-height: 1.5em;
     flex: none;
     border:1px solid #939393;
   }
@@ -108,7 +108,7 @@ export default {
         {content: '大', val: '0.4rem'}
       ],
       bg: ['#fafafa', 'rgb(207, 249, 235)', 'rgb(241,229,201)', 'rgb(253, 214, 246)'],
-      defaultSize: 1,
+      defaultSize: 0,
       defaultBg: 0,
       night: false
     }

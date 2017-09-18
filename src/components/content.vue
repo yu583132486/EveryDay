@@ -40,7 +40,7 @@ h2{
 	font-size: .1rem
 }
 .content{
-	line-height: .4rem;
+	line-height: 1.5em;
 	text-indent: 2em
 }
 .footer{
