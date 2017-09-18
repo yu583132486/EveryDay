@@ -1,6 +1,10 @@
-# qnyh
+# 每日一文
 
-> A Vue.js project
+> 一个使用了vue全家桶的进阶项目,打包成原生app
+
+# 技术栈
+
+>vue+vue4-router+axios+vuex+webpack+ES6+babel+vue-loader+flex+node+npm
 
 ## Build Setup
 
